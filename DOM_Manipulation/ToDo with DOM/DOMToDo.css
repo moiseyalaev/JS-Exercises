@@ -1,0 +1,8 @@
+.completedTask {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.hoveredOver {
+    color: green;
+}

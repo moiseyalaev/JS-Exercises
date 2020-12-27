@@ -1,0 +1,89 @@
+body {
+    background-color: #232323;
+    margin: 0;
+    font-family: "Montserrat", "Avenir";
+}
+
+.square {
+    /* each of 3 squares in a row given 30% width */
+    width: 30%;
+    background-color: purple;
+    /* giving space makes them visble */
+    padding-bottom: 30%;
+    /* Elements float left */
+    float: left;
+    /* given margin add up to 100% width  and space */
+    margin: 1.66%;
+    border-radius: 20%;
+    /* fade out background-color for [time]s */
+    transition: background-color 0.5s;
+    /* for all browser support: */
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+}
+
+#container {
+    /* 0 on top and bottom and auto on sides make it center */
+    margin: 20px auto;
+    /* container that holds these sqaures is given a maxwidth*/
+    max-width: 600px;
+}
+
+#colorDis {
+    font-size: 200%;
+}
+
+#message {
+    display: inline-block;
+    width: 20%;
+}
+
+h1 {
+    color: white;
+    background-color: steelblue;
+    /* normal reduced the weight more than 0 */
+    font-weight: normal;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0;
+    /* padding top = 20, bottom = 0 */
+    padding: 20px 0;
+}
+
+#stripe {
+    background-color: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+
+.selected {
+    background-color: steelblue;
+    color: white;
+}
+
+button {
+    border: none;
+    /* background = none is diff than background-color */
+    background: none;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Montserrat", "Avenir";
+    font-weight: 700;
+    /* inherits apt font size from parent ele */
+    font-size: inherit;
+    color: steelblue;
+    height: 100%;
+    /* fade in "all" items for [time]s  */
+    transition: all 0.5s;
+    /* for all browser support: */
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+button:hover {
+    color: white;
+    background: steelblue;
+}
